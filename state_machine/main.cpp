@@ -1,6 +1,5 @@
 #include "frame_machine.h"
 #include "randomgenerator.h"
-#include <unistd.h> // used only for linux machines
 
 int main()
 {
