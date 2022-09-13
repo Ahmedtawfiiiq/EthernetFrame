@@ -34,7 +34,7 @@ void FrameMachine::out_data(vector<uint8> vec){
     for(uint8 i = 0; i < vec.size(); i++){
         printf("%x", vec[i]);
         k++;
-        if(k == 4){
+        if(k == 8){
             k = 0;
             cout << endl;
         }

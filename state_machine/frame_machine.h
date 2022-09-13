@@ -1,20 +1,21 @@
 #pragma once
 #include "statemachine.h"
+#include "randomgenerator.h"
+#include <ctime>
 
 // our frame machine
 class FrameMachine:public StateMachine<FrameMachine>{
 public:
-    // ethernet frame configurations
-    // stream duration = 1000 micro seconds -> let 10 seconds
-    // burst period = 100 micro seconds -> let 1 second
-    // frames per burst = 3 frames
-    // 1000 micro seconds (1 milli seconds) -> 30 frames -> let in 10 seconds
 
-    vector<uint8> pre  = {0xaa, 0xaa, 0xaa, 0xaa, 0xaa, 0xaa, 0xaa};
-    vector<uint8> sop  = {0xab};
-    vector<uint8> dest = {0x10, 0x20, 0x30, 0x40, 0x50, 0x60};
-    vector<uint8> src  = {0x10, 0x20, 0x30, 0x30, 0x20, 0x10};
-    vector<uint8> type = {0x08, 0x00};
+    RandomGenerator data;
+    // ethernet frame configurations
+    vector<uint8> pre  = {0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa};
+    vector<uint8> sop  = {0xa, 0xb};
+    vector<uint8> dest = {0x1, 0x0, 0x2, 0x0, 0x3, 0x0, 0x4, 0x0, 0x5, 0x0, 0x6, 0x0};
+    vector<uint8> src  = {0x1, 0x0, 0x2, 0x0, 0x3, 0x0, 0x3, 0x0, 0x2, 0x0, 0x1, 0x0};
+    vector<uint8> type = {0x0, 0x8, 0x0, 0x0};
+    vector<uint8> dpay = data.Generate(); // 40 bytes
+    vector<uint8> ifgs = {0x0, 0x7};
 
     // Ethernet frame has 8 states [1:preamble
     //                              2:sop
@@ -32,6 +33,9 @@ public:
     State<FrameMachine> *payload;
     State<FrameMachine> *fcs;
     State<FrameMachine> *ifg;
+
+    clock_t frame_start = clock();
+    clock_t burst_period;  // burst = 400 micro seconds
 
     bool done = false;
 

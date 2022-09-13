@@ -8,7 +8,7 @@ public:
     void Enter(){cout << "enter preamble state" << endl;}
     void Execute(FrameMachine*);
     void Exit(){cout << endl << "exit from preamble state" << endl;}
-    ~preamble_state(){cout << "preamble state destroyed" << endl;}
+    ~preamble_state(){cout << endl << "preamble state destroyed" << endl;}
 };
 
 // sop state
@@ -16,7 +16,7 @@ class sop_state:public State<class FrameMachine>{
 public:
     void Enter(){cout << "enter sop state" << endl;}
     void Execute(FrameMachine*);
-    void Exit(){cout << endl << "exit from sop state" << endl;}
+    void Exit(){cout << "exit from sop state" << endl;}
     ~sop_state(){cout << "sop state destroyed" << endl;}
 };
 
@@ -34,7 +34,7 @@ class source_address_state:public State<class FrameMachine>{
 public:
     void Enter(){cout << "enter source address state" << endl;}
     void Execute(FrameMachine*);
-    void Exit(){cout << endl << "exit from source address state" << endl;}
+    void Exit(){cout << "exit from source address state" << endl;}
     ~source_address_state(){cout << "source address state destroyed" << endl;}
 };
 

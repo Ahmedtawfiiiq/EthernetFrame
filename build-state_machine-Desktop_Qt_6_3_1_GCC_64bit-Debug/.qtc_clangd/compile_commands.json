@@ -174,10 +174,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.cpp"
 },
 {
     "arguments": [
@@ -399,9 +399,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.h"
 }
 ]
