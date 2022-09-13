@@ -79,12 +79,6 @@ build CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o: CXX_COMPILER__state_
   OBJECT_DIR = CMakeFiles/state_machine.dir
   OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
 
-build CMakeFiles/state_machine.dir/crc.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/crc.cpp || cmake_object_order_depends_target_state_machine
-  DEP_FILE = CMakeFiles/state_machine.dir/crc.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles/state_machine.dir
-  OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target state_machine
@@ -93,7 +87,7 @@ build CMakeFiles/state_machine.dir/crc.cpp.o: CXX_COMPILER__state_machine_Debug 
 #############################################
 # Link the executable state_machine
 
-build state_machine: CXX_EXECUTABLE_LINKER__state_machine_Debug CMakeFiles/state_machine.dir/main.cpp.o CMakeFiles/state_machine.dir/state.cpp.o CMakeFiles/state_machine.dir/coolstates.cpp.o CMakeFiles/state_machine.dir/eventgenerator.cpp.o CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o CMakeFiles/state_machine.dir/crc.cpp.o
+build state_machine: CXX_EXECUTABLE_LINKER__state_machine_Debug CMakeFiles/state_machine.dir/main.cpp.o CMakeFiles/state_machine.dir/state.cpp.o CMakeFiles/state_machine.dir/coolstates.cpp.o CMakeFiles/state_machine.dir/eventgenerator.cpp.o CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o
   FLAGS = -DQT_QML_DEBUG -g
   OBJECT_DIR = CMakeFiles/state_machine.dir
   POST_BUILD = :

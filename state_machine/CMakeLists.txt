@@ -11,12 +11,10 @@ coolstates.h
 statemachine.h
 eventgenerator.h
 acoolstatemachine.h
-crc.h
 state.cpp
 coolstates.cpp
 eventgenerator.cpp
-acoolstatemachine.cpp
-crc.cpp)
+acoolstatemachine.cpp)
 
 install(TARGETS state_machine
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
