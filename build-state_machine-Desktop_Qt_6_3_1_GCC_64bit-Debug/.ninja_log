@@ -1,10 +1,10 @@
 # ninja log v5
 1	413	1663072145681691796	CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o	86039c9eab8ef88
 1	302	1663072145569689440	CMakeFiles/state_machine.dir/crc.cpp.o	d1dc6ec5b1bfc3ab
-0	19	1663072146493708887	build.ninja	e08c667b00edaeb3
 0	292	1663072145561689272	CMakeFiles/state_machine.dir/eventgenerator.cpp.o	1ba63a580e35d6e3
+0	95	1663072573057342764	build.ninja	e08c667b00edaeb3
 1	296	1663072145565689356	CMakeFiles/state_machine.dir/main.cpp.o	2621bfbb153f9938
 0	286	1663072145553689103	CMakeFiles/state_machine.dir/statemachine.cpp.o	7b4ac72b8eea376e
 1	290	1663072145561689272	CMakeFiles/state_machine.dir/state.cpp.o	b14ef04d7ccc0791
 0	417	1663072145685691881	CMakeFiles/state_machine.dir/coolstates.cpp.o	380110c7e8eb408b
-417	471	1663072145741693059	state_machine	fca7066f42516393
+2	146	1663072571977328218	state_machine	5aad546e884ea39f

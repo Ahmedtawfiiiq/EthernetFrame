@@ -14,7 +14,6 @@ acoolstatemachine.h
 crc.h
 state.cpp
 coolstates.cpp
-statemachine.cpp
 eventgenerator.cpp
 acoolstatemachine.cpp
 crc.cpp)
