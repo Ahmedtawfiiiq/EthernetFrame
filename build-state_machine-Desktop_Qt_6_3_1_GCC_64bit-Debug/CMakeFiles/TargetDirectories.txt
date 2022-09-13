@@ -1,0 +1,7 @@
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/state_machine.dir
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/list_install_components.dir
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/install.dir
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/install/local.dir
+/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/install/strip.dir
