@@ -1,11 +1,21 @@
 # ninja log v5
 1	413	1663072145681691796	CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o	86039c9eab8ef88
-1	302	1663072145569689440	CMakeFiles/state_machine.dir/crc.cpp.o	d1dc6ec5b1bfc3ab
+4	513	1663078665131561439	CMakeFiles/state_machine.dir/crc.cpp.o	d1dc6ec5b1bfc3ab
+0	95	1663091962544013977	build.ninja	e08c667b00edaeb3
 0	292	1663072145561689272	CMakeFiles/state_machine.dir/eventgenerator.cpp.o	1ba63a580e35d6e3
-0	95	1663072951559445789	build.ninja	e08c667b00edaeb3
-1	296	1663072145565689356	CMakeFiles/state_machine.dir/main.cpp.o	2621bfbb153f9938
+1	567	1663097465772006911	CMakeFiles/state_machine.dir/main.cpp.o	2621bfbb153f9938
 0	286	1663072145553689103	CMakeFiles/state_machine.dir/statemachine.cpp.o	7b4ac72b8eea376e
+3	919	1663097627296884152	CMakeFiles/state_machine.dir/framestates.cpp.o	698328be3d3424ba
 1	290	1663072145561689272	CMakeFiles/state_machine.dir/state.cpp.o	b14ef04d7ccc0791
 0	417	1663072145685691881	CMakeFiles/state_machine.dir/coolstates.cpp.o	380110c7e8eb408b
-2	146	1663072571977328218	state_machine	5aad546e884ea39f
-0	52	1663072966667714520	state_machine	bcf5ba42e05ba17
+1200	1298	1663097627676886222	state_machine	a26895300213a2e4
+2	1200	1663097627580885699	CMakeFiles/state_machine.dir/frame_machine.cpp.o	729976cadebfadda
+1	1104	1663097653785028530	CMakeFiles/state_machine.dir/framestates.cpp.o	698328be3d3424ba
+1	1326	1663097654009029751	CMakeFiles/state_machine.dir/frame_machine.cpp.o	729976cadebfadda
+1326	1464	1663097654145030493	state_machine	a26895300213a2e4
+1	1243	1663097689849225296	CMakeFiles/state_machine.dir/frame_machine.cpp.o	729976cadebfadda
+2	1262	1663097689869225405	CMakeFiles/state_machine.dir/framestates.cpp.o	698328be3d3424ba
+1262	1352	1663097689957225886	state_machine	a26895300213a2e4
+2	1291	1663097697481266965	CMakeFiles/state_machine.dir/framestates.cpp.o	698328be3d3424ba
+1	1315	1663097697505267095	CMakeFiles/state_machine.dir/frame_machine.cpp.o	729976cadebfadda
+1315	1406	1663097697597267598	state_machine	a26895300213a2e4

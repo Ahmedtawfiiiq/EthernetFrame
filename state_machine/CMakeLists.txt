@@ -7,14 +7,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(state_machine main.cpp
 state.h
-coolstates.h
 statemachine.h
-eventgenerator.h
-acoolstatemachine.h
-state.cpp
-coolstates.cpp
+frame_machine.cpp
+frame_machine.h
+framestates.cpp
+framestates.h
 eventgenerator.cpp
-acoolstatemachine.cpp)
+eventgenerator.h)
 
 install(TARGETS state_machine
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})

@@ -1,17 +1,12 @@
-#include <iostream>
-#include "acoolstatemachine.h"
-#include <ctime>
-
-using namespace std;
+#include "frame_machine.h"
+#include <unistd.h> // used only for linux machines
 
 int main()
 {
-    srand(time(0));
-    cout << "Hello State Machine" << endl;
-    ACoolStateMachine stateMachine;
+    cout << "ethernet frame started" << endl;
+    FrameMachine stateMachine;
 
-    // game loop goes here..
-    while(!stateMachine.HasDone()){
+    while(!stateMachine.isDone()){
         stateMachine.Update();
     }
 

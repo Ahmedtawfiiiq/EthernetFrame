@@ -84,10 +84,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/state.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/state.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.cpp"
 },
 {
     "arguments": [
@@ -129,10 +129,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/coolstates.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/coolstates.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.cpp"
 },
 {
     "arguments": [
@@ -178,51 +178,6 @@
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
     "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.cpp"
-},
-{
-    "arguments": [
-        "clang",
-        "-Wno-documentation-unknown-command",
-        "-Wno-unknown-warning-option",
-        "-Wno-unknown-pragmas",
-        "-nostdinc",
-        "-nostdinc++",
-        "-DQT_QML_DEBUG",
-        "-g",
-        "-std=gnu++17",
-        "-fsyntax-only",
-        "-m64",
-        "--target=x86_64-linux-gnu",
-        "-DQ_CREATOR_RUN",
-        "-isystem",
-        "/usr/include/c++/9",
-        "-isystem",
-        "/usr/include/x86_64-linux-gnu/c++/9",
-        "-isystem",
-        "/usr/include/c++/9/backward",
-        "-isystem",
-        "/usr/local/include",
-        "-isystem",
-        "/home/ahmed/Qt/Tools/QtCreator/libexec/qtcreator/clang/lib/clang/14.0.3/include",
-        "-isystem",
-        "/usr/include/x86_64-linux-gnu",
-        "-isystem",
-        "/usr/include",
-        "-I",
-        "/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/cplusplus/wrappedQtHeaders",
-        "-I",
-        "/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/cplusplus/wrappedQtHeaders/QtCore",
-        "-fmessage-length=0",
-        "-fdiagnostics-show-note-include-stack",
-        "-fretain-comments-from-system-headers",
-        "-fmacro-backtrace-limit=0",
-        "-ferror-limit=1000",
-        "-x",
-        "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/acoolstatemachine.cpp"
-    ],
-    "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/acoolstatemachine.cpp"
 },
 {
     "arguments": [
@@ -309,51 +264,6 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/coolstates.h"
-    ],
-    "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/coolstates.h"
-},
-{
-    "arguments": [
-        "clang",
-        "-Wno-documentation-unknown-command",
-        "-Wno-unknown-warning-option",
-        "-Wno-unknown-pragmas",
-        "-nostdinc",
-        "-nostdinc++",
-        "-DQT_QML_DEBUG",
-        "-g",
-        "-std=gnu++17",
-        "-fsyntax-only",
-        "-m64",
-        "--target=x86_64-linux-gnu",
-        "-DQ_CREATOR_RUN",
-        "-isystem",
-        "/usr/include/c++/9",
-        "-isystem",
-        "/usr/include/x86_64-linux-gnu/c++/9",
-        "-isystem",
-        "/usr/include/c++/9/backward",
-        "-isystem",
-        "/usr/local/include",
-        "-isystem",
-        "/home/ahmed/Qt/Tools/QtCreator/libexec/qtcreator/clang/lib/clang/14.0.3/include",
-        "-isystem",
-        "/usr/include/x86_64-linux-gnu",
-        "-isystem",
-        "/usr/include",
-        "-I",
-        "/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/cplusplus/wrappedQtHeaders",
-        "-I",
-        "/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/cplusplus/wrappedQtHeaders/QtCore",
-        "-fmessage-length=0",
-        "-fdiagnostics-show-note-include-stack",
-        "-fretain-comments-from-system-headers",
-        "-fmacro-backtrace-limit=0",
-        "-ferror-limit=1000",
-        "-x",
-        "c++-header",
         "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/statemachine.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
@@ -399,10 +309,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.h"
 },
 {
     "arguments": [
@@ -444,9 +354,54 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/acoolstatemachine.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/acoolstatemachine.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.h"
+},
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-DQT_QML_DEBUG",
+        "-g",
+        "-std=gnu++17",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-linux-gnu",
+        "-DQ_CREATOR_RUN",
+        "-isystem",
+        "/usr/include/c++/9",
+        "-isystem",
+        "/usr/include/x86_64-linux-gnu/c++/9",
+        "-isystem",
+        "/usr/include/c++/9/backward",
+        "-isystem",
+        "/usr/local/include",
+        "-isystem",
+        "/home/ahmed/Qt/Tools/QtCreator/libexec/qtcreator/clang/lib/clang/14.0.3/include",
+        "-isystem",
+        "/usr/include/x86_64-linux-gnu",
+        "-isystem",
+        "/usr/include",
+        "-I",
+        "/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/cplusplus/wrappedQtHeaders",
+        "-I",
+        "/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/cplusplus/wrappedQtHeaders/QtCore",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++-header",
+        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.h"
+    ],
+    "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.h"
 }
 ]

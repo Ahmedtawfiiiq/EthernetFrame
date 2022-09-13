@@ -55,26 +55,20 @@ build CMakeFiles/state_machine.dir/main.cpp.o: CXX_COMPILER__state_machine_Debug
   OBJECT_DIR = CMakeFiles/state_machine.dir
   OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
 
-build CMakeFiles/state_machine.dir/state.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/state.cpp || cmake_object_order_depends_target_state_machine
-  DEP_FILE = CMakeFiles/state_machine.dir/state.cpp.o.d
+build CMakeFiles/state_machine.dir/frame_machine.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.cpp || cmake_object_order_depends_target_state_machine
+  DEP_FILE = CMakeFiles/state_machine.dir/frame_machine.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/state_machine.dir
   OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
 
-build CMakeFiles/state_machine.dir/coolstates.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/coolstates.cpp || cmake_object_order_depends_target_state_machine
-  DEP_FILE = CMakeFiles/state_machine.dir/coolstates.cpp.o.d
+build CMakeFiles/state_machine.dir/framestates.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.cpp || cmake_object_order_depends_target_state_machine
+  DEP_FILE = CMakeFiles/state_machine.dir/framestates.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/state_machine.dir
   OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
 
 build CMakeFiles/state_machine.dir/eventgenerator.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/eventgenerator.cpp || cmake_object_order_depends_target_state_machine
   DEP_FILE = CMakeFiles/state_machine.dir/eventgenerator.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles/state_machine.dir
-  OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
-
-build CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o: CXX_COMPILER__state_machine_Debug /home/ahmed/Ethernet/Ethernet_Frame/state_machine/acoolstatemachine.cpp || cmake_object_order_depends_target_state_machine
-  DEP_FILE = CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/state_machine.dir
   OBJECT_FILE_DIR = CMakeFiles/state_machine.dir
@@ -87,7 +81,7 @@ build CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o: CXX_COMPILER__state_
 #############################################
 # Link the executable state_machine
 
-build state_machine: CXX_EXECUTABLE_LINKER__state_machine_Debug CMakeFiles/state_machine.dir/main.cpp.o CMakeFiles/state_machine.dir/state.cpp.o CMakeFiles/state_machine.dir/coolstates.cpp.o CMakeFiles/state_machine.dir/eventgenerator.cpp.o CMakeFiles/state_machine.dir/acoolstatemachine.cpp.o
+build state_machine: CXX_EXECUTABLE_LINKER__state_machine_Debug CMakeFiles/state_machine.dir/main.cpp.o CMakeFiles/state_machine.dir/frame_machine.cpp.o CMakeFiles/state_machine.dir/framestates.cpp.o CMakeFiles/state_machine.dir/eventgenerator.cpp.o
   FLAGS = -DQT_QML_DEBUG -g
   OBJECT_DIR = CMakeFiles/state_machine.dir
   POST_BUILD = :
