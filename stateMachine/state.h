@@ -6,7 +6,7 @@
 
 using namespace std;
 
-typedef unsigned char uint8;
+typedef unsigned short uint16;
 
 // abstract class for states -> used to create our states
 template <class T> class state{

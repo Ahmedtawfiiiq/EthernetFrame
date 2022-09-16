@@ -29,14 +29,34 @@ void frameMachine::update(){
     stateMachine<frameMachine>::update();
 }
 
-void frameMachine::outData(vector<uint8> vec){
-    static uint8 k = 0;
-    for(uint8 i = 0; i < vec.size(); i++){
+void frameMachine::outData(vector<uint16> vec){
+    static uint16 k = 0;
+    for(uint16 i = 0; i < vec.size(); i++){
         printf("%x", vec[i]);
         k++;
         if(k == 8){
             k = 0;
             cout << endl;
+        }
+    }
+}
+
+void frameMachine::openFile(string path){
+    frameMachine::file.open(path, ios::out);
+}
+
+void frameMachine::closeFile(){
+    frameMachine::file.close();
+}
+
+void frameMachine::outFile(vector<uint16> vec){
+    static uint16 k = 0;
+    for(uint16 i = 0; i < vec.size(); i++){
+        frameMachine::file << hex << vec[i];
+        k++;
+        if(k == 8){
+            k = 0;
+            frameMachine::file << "\n";
         }
     }
 }

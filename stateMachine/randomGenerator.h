@@ -7,13 +7,13 @@
 
 using namespace std;
 
-typedef unsigned char uint8;
+typedef unsigned short uint16;
 
 class randomGenerator
 {
 public:
     // this class is a singleton -> only one instance can be created
     static randomGenerator *getInstance();
-    void cleanUp(vector<uint8> vec){vec.clear();}
-    vector<uint8> generate();
+    void cleanUp(vector<uint16> vec){vec.clear();}
+    vector<uint16> generate();
 };
