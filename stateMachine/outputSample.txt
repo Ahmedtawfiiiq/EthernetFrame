@@ -1,0 +1,142 @@
+ethernet frame started
+frame machine created
+frame machine inilalized
+enter preamble state
+aaaaaaaa
+aaaaaa
+exit from preamble state
+enter sop state
+ab
+exit from sop state
+enter destination address state
+10203040
+5060
+exit destination address state
+enter source address state
+1020
+30302010
+exit from source address state
+enter length/type state
+0800
+exit from length/type state
+enter payload state
+3cb6
+8674d91f
+eb317aa7
+248b1a6b
+c1656cb8
+8a9c8847
+e9b23786
+43f3b58b
+845932fc
+6e4b52fa
+ebdd
+exit from payload state
+enter fcs state
+
+exit from fcs state
+enter ifg state
+0707
+07070707
+07070707
+07070707
+07070707
+07070707
+07070707
+07070707
+
+
+frame time:82
+
+exit from ifg state
+enter destination address state
+10203040
+5060
+exit destination address state
+enter source address state
+1020
+30302010
+exit from source address state
+enter length/type state
+0800
+exit from length/type state
+enter payload state
+3cb6
+8674d91f
+eb317aa7
+248b1a6b
+c1656cb8
+8a9c8847
+e9b23786
+43f3b58b
+845932fc
+6e4b52fa
+ebdd
+exit from payload state
+enter fcs state
+
+exit from fcs state
+enter ifg state
+0707
+07070707
+07070707
+07070707
+07070707
+07070707
+07070707
+07070707
+
+
+frame time:165
+
+exit from ifg state
+enter destination address state
+10203040
+5060
+exit destination address state
+enter source address state
+1020
+30302010
+exit from source address state
+enter length/type state
+0800
+exit from length/type state
+enter payload state
+3cb6
+8674d91f
+eb317aa7
+248b1a6b
+c1656cb8
+8a9c8847
+e9b23786
+43f3b58b
+845932fc
+6e4b52fa
+ebdd
+exit from payload state
+enter fcs state
+
+exit from fcs state
+enter ifg state
+0707
+07070707
+07070707
+07070707
+07070707
+07070707
+07070707
+07070707
+
+
+frame time:234
+exit reason -> max frames per burst
+
+preamble state destroyed
+sop state destroyed
+destination address state destroyed
+source address state destroyed
+length/type state destroyed
+payload state destroyed
+fcs state destroyed
+ifg state destroyed
+frame machine destroyed

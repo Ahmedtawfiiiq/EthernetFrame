@@ -65,7 +65,7 @@ void ifgState::execute(frameMachine *frameMachinePtr){
                     cout << "exit reason -> max frames per burst" << endl;
                 }
                 else{
-                    frameMachinePtr -> changeState(frameMachinePtr -> preamble);
+                    frameMachinePtr -> changeState(frameMachinePtr -> destinationAddress);
                     numberOfFrames++;
                 }
             }
