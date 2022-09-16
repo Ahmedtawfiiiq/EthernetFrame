@@ -130,7 +130,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=/home/ahmed/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=state_machine
+CMAKE_PROJECT_NAME:STATIC=stateMachine
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -201,13 +201,13 @@ QT_CREATOR_SKIP_PACKAGE_MANAGER_SETUP:BOOL=OFF
 QT_QMAKE_EXECUTABLE:FILEPATH=/home/ahmed/Qt/6.3.1/gcc_64/bin/qmake
 
 //Value Computed by CMake
-state_machine_BINARY_DIR:STATIC=/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug
+stateMachine_BINARY_DIR:STATIC=/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug
 
 //Value Computed by CMake
-state_machine_IS_TOP_LEVEL:STATIC=ON
+stateMachine_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-state_machine_SOURCE_DIR:STATIC=/home/ahmed/Ethernet/Ethernet_Frame/state_machine
+stateMachine_SOURCE_DIR:STATIC=/home/ahmed/Ethernet/Ethernet_Frame/stateMachine
 
 
 ########################
@@ -274,7 +274,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/ahmed/Ethernet/Ethernet_Frame/state_machine
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/ahmed/Ethernet/Ethernet_Frame/stateMachine
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

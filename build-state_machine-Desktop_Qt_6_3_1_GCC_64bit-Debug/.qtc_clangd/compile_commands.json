@@ -39,10 +39,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/main.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/main.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/main.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/main.cpp"
 },
 {
     "arguments": [
@@ -84,10 +84,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameMachine.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameMachine.cpp"
 },
 {
     "arguments": [
@@ -129,10 +129,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameStates.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameStates.cpp"
 },
 {
     "arguments": [
@@ -174,10 +174,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.cpp"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/randomGenerator.cpp"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.cpp"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/randomGenerator.cpp"
 },
 {
     "arguments": [
@@ -219,10 +219,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/state.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/state.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/state.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/state.h"
 },
 {
     "arguments": [
@@ -264,10 +264,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/statemachine.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/stateMachine.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/statemachine.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/stateMachine.h"
 },
 {
     "arguments": [
@@ -309,10 +309,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameMachine.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/frame_machine.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameMachine.h"
 },
 {
     "arguments": [
@@ -354,10 +354,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameStates.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/framestates.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/frameStates.h"
 },
 {
     "arguments": [
@@ -399,9 +399,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.h"
+        "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/randomGenerator.h"
     ],
     "directory": "/home/ahmed/Ethernet/Ethernet_Frame/build-state_machine-Desktop_Qt_6_3_1_GCC_64bit-Debug/.qtc_clangd",
-    "file": "/home/ahmed/Ethernet/Ethernet_Frame/state_machine/randomgenerator.h"
+    "file": "/home/ahmed/Ethernet/Ethernet_Frame/stateMachine/randomGenerator.h"
 }
 ]
