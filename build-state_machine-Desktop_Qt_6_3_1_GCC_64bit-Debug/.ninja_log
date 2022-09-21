@@ -45,3 +45,7 @@
 0	722	1663755144867130611	CMakeFiles/stateMachine.dir/frameStates.cpp.o	614892d876a27f0e
 0	846	1663755164467394460	CMakeFiles/stateMachine.dir/configurationHandler.cpp.o	12cf5ad6cfab37b6
 847	916	1663755164535395387	stateMachine	133bcc1aec903787
+2	381	1663756245123144782	CMakeFiles/stateMachine.dir/frameMachine.cpp.o	e627eadec6c45997
+1	630	1663756245375146248	CMakeFiles/stateMachine.dir/main.cpp.o	38ebba3c03b09f58
+2	632	1663756245375146248	CMakeFiles/stateMachine.dir/frameStates.cpp.o	614892d876a27f0e
+632	702	1663756245443146643	stateMachine	133bcc1aec903787

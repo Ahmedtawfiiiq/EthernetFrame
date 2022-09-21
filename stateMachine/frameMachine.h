@@ -1,8 +1,6 @@
 #pragma once
 #include "stateMachine.h"
 
-#include <vector>
-
 // our frame machine
 class FrameMachine:public StateMachine<FrameMachine>{
 public:
