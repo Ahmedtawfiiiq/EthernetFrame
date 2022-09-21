@@ -170,12 +170,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "randomGenerator.cpp",
+			"path" : "configurationHandler.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "randomGenerator.h",
+			"path" : "configurationHandler.h",
 			"sourceGroupIndex" : 1
 		}
 	],

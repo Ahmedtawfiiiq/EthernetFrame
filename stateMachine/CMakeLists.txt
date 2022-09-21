@@ -12,9 +12,8 @@ frameMachine.cpp
 frameMachine.h
 frameStates.cpp
 frameStates.h
-randomGenerator.cpp
-randomGenerator.h
-output.txt)
+configurationHandler.cpp
+configurationHandler.h)
 
 install(TARGETS stateMachine
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})

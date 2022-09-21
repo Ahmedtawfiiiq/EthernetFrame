@@ -67,8 +67,8 @@ build CMakeFiles/stateMachine.dir/frameStates.cpp.o: CXX_COMPILER__stateMachine_
   OBJECT_DIR = CMakeFiles/stateMachine.dir
   OBJECT_FILE_DIR = CMakeFiles/stateMachine.dir
 
-build CMakeFiles/stateMachine.dir/randomGenerator.cpp.o: CXX_COMPILER__stateMachine_Debug /home/ahmed/Ethernet/Ethernet_Frame/stateMachine/randomGenerator.cpp || cmake_object_order_depends_target_stateMachine
-  DEP_FILE = CMakeFiles/stateMachine.dir/randomGenerator.cpp.o.d
+build CMakeFiles/stateMachine.dir/configurationHandler.cpp.o: CXX_COMPILER__stateMachine_Debug /home/ahmed/Ethernet/Ethernet_Frame/stateMachine/configurationHandler.cpp || cmake_object_order_depends_target_stateMachine
+  DEP_FILE = CMakeFiles/stateMachine.dir/configurationHandler.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/stateMachine.dir
   OBJECT_FILE_DIR = CMakeFiles/stateMachine.dir
@@ -81,7 +81,7 @@ build CMakeFiles/stateMachine.dir/randomGenerator.cpp.o: CXX_COMPILER__stateMach
 #############################################
 # Link the executable stateMachine
 
-build stateMachine: CXX_EXECUTABLE_LINKER__stateMachine_Debug CMakeFiles/stateMachine.dir/main.cpp.o CMakeFiles/stateMachine.dir/frameMachine.cpp.o CMakeFiles/stateMachine.dir/frameStates.cpp.o CMakeFiles/stateMachine.dir/randomGenerator.cpp.o
+build stateMachine: CXX_EXECUTABLE_LINKER__stateMachine_Debug CMakeFiles/stateMachine.dir/main.cpp.o CMakeFiles/stateMachine.dir/frameMachine.cpp.o CMakeFiles/stateMachine.dir/frameStates.cpp.o CMakeFiles/stateMachine.dir/configurationHandler.cpp.o
   FLAGS = -DQT_QML_DEBUG -g
   OBJECT_DIR = CMakeFiles/stateMachine.dir
   POST_BUILD = :

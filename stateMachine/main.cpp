@@ -1,13 +1,25 @@
 #include "frameMachine.h"
+#include "configurationHandler.h"
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
 
 int main()
 {
-    cout << "ethernet frame started" << endl;
-    frameMachine stateMachine;
+    configurationHandler::getInstance().inFile("input.txt");
+    configurationHandler::getInstance().openFile("output.txt");
 
-    while(!stateMachine.isDone()){
-        stateMachine.update();
+    for(uint16 i = 0; i < stoi(configurationHandler::getInstance().data[frameMachine::streams]); i++){
+        cout << "ethernet frame started" << endl;
+        frameMachine stateMachine;
+        while(!stateMachine.isDone()){
+            stateMachine.update();
+        }
     }
+
+    configurationHandler::getInstance().closeFile();
 
     return 0;
 }
