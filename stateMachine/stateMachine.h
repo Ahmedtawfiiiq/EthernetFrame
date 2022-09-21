@@ -9,37 +9,37 @@ typedef unsigned short uint16;
 
 // abstract class for states for FSM (finite state machines)
 // used to create our machines
-template <class T> class stateMachine{
+template <class T> class StateMachine{
 private:
     T *framePtr;               // pointer to our created machine
-    state<T> *currentStatePtr; // pointer to current state
+    State<T> *currentStatePtr; // pointer to current state
     bool firstRun = true;    // flag indicate start state
 public:
-    stateMachine(){cout << "frame machine created" << endl;}    // FSM constructor
-    ~stateMachine(){cout << "frame machine destroyed" << endl;} // FSM destructor
-    void init(T*, state<T>*);               // FSM initializer
-    void changeState(state<T>*);                       // FSM state changer
+    StateMachine(){cout << "frame machine created" << endl;}    // FSM constructor
+    ~StateMachine(){cout << "frame machine destroyed" << endl;} // FSM destructor
+    void init(T*, State<T>*);               // FSM initializer
+    void changeState(State<T>*);                       // FSM state changer
     void update();                                              // FSM state executor
 };
 
 // inline functions are used to access private attributes
 // and due to small size of those functions
 template<class T>
-inline void stateMachine<T>::init(T *frameMachinePtr, state<T> *initialState){
+inline void StateMachine<T>::init(T *frameMachinePtr, State<T> *initialState){
     currentStatePtr = initialState;
     framePtr = frameMachinePtr;
     cout << "frame machine inilalized" << endl;
 }
 
 template<class T>
-inline void stateMachine<T>::changeState(state<T> *newState){
+inline void StateMachine<T>::changeState(State<T> *newState){
     currentStatePtr -> exit();
     currentStatePtr = newState;        // change state pointer to new state
     currentStatePtr -> enter();
 }
 
 template<class T>
-inline void stateMachine<T>::update(){
+inline void StateMachine<T>::update(){
     if(firstRun){
         firstRun = false;
         currentStatePtr -> enter();

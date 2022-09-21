@@ -4,7 +4,7 @@
 #include <vector>
 
 // our frame machine
-class frameMachine:public stateMachine<frameMachine>{
+class FrameMachine:public StateMachine<FrameMachine>{
 public:
     // Ethernet frame has 8 states
     enum configuration{
@@ -22,7 +22,7 @@ public:
     };
 public:
     // ethernet frame configurations
-    state<frameMachine>* states[8];
+    State<FrameMachine>* states[8];
     string ifgs = "07";
     string buffer = "";
 
@@ -32,8 +32,8 @@ public:
     bool doneFlag = false;
 
 public:
-    frameMachine();
-    ~frameMachine();
+    FrameMachine();
+    ~FrameMachine();
     void update(); // call update function of parent class
     void done(){doneFlag = true;}
     bool isDone(){return doneFlag;}

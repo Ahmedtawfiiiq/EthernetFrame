@@ -1,19 +1,19 @@
 #include "frameMachine.h"
 #include "frameStates.h"
 
-frameMachine::frameMachine(){
-    states[preamble] = new preambleState();
-    states[startOfPacket] = new sopState();
-    states[destinationAddress] = new destinationAddressState();
-    states[sourceAddress] = new sourceAddressState();
-    states[lengthType] = new lengthTypeState();
-    states[payload] = new payloadState();
-    states[fcs] = new fcsState();
-    states[ifg] = new ifgState();
-    stateMachine<frameMachine>::init(this, states[preamble]);
+FrameMachine::FrameMachine(){
+    states[preamble] = new PreambleState();
+    states[startOfPacket] = new SopState();
+    states[destinationAddress] = new DestinationAddressState();
+    states[sourceAddress] = new SourceAddressState();
+    states[lengthType] = new LengthTypeState();
+    states[payload] = new PayloadState();
+    states[fcs] = new FcsState();
+    states[ifg] = new IfgState();
+    StateMachine<FrameMachine>::init(this, states[preamble]);
 }
 
-frameMachine::~frameMachine(){
+FrameMachine::~FrameMachine(){
     delete states[preamble];
     delete states[startOfPacket];
     delete states[destinationAddress];
@@ -25,6 +25,6 @@ frameMachine::~frameMachine(){
 }
 
 // execute current state
-void frameMachine::update(){
-    stateMachine<frameMachine>::update();
+void FrameMachine::update(){
+    StateMachine<FrameMachine>::update();
 }

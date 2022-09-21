@@ -4,49 +4,49 @@
 
 #define MICROSECONDS 1000000
 
-void preambleState::execute(frameMachine *frameMachinePtr){
-    // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::preamble]);
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::preamble]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::startOfPacket]);
+void PreambleState::execute(FrameMachine *frameMachinePtr){
+    // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::preamble]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::preamble]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::startOfPacket]);
 }
 
-void sopState::execute(frameMachine *frameMachinePtr){
-    // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::startOfPacket]);
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::startOfPacket]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::destinationAddress]);
+void SopState::execute(FrameMachine *frameMachinePtr){
+    // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::startOfPacket]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::startOfPacket]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::destinationAddress]);
 }
 
-void destinationAddressState::execute(frameMachine *frameMachinePtr){
-    // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::destinationAddress]);
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::destinationAddress]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::sourceAddress]);
+void DestinationAddressState::execute(FrameMachine *frameMachinePtr){
+    // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::destinationAddress]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::destinationAddress]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::sourceAddress]);
 }
 
-void sourceAddressState::execute(frameMachine *frameMachinePtr){
-    // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::lengthType]);
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::sourceAddress]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::lengthType]);
+void SourceAddressState::execute(FrameMachine *frameMachinePtr){
+    // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::lengthType]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::sourceAddress]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::lengthType]);
 }
 
-void lengthTypeState::execute(frameMachine *frameMachinePtr){
-    // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::payload]);
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::lengthType]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::payload]);
+void LengthTypeState::execute(FrameMachine *frameMachinePtr){
+    // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::payload]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::lengthType]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::payload]);
 }
 
-void payloadState::execute(frameMachine *frameMachinePtr){
-    // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::fcs]);
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::payload]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::fcs]);
+void PayloadState::execute(FrameMachine *frameMachinePtr){
+    // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::fcs]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::payload]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::fcs]);
 }
 
-void fcsState::execute(frameMachine *frameMachinePtr){
+void FcsState::execute(FrameMachine *frameMachinePtr){
     // compute crc
-    configurationHandler::getInstance().store(configurationHandler::getInstance().data[frameMachine::fcs]);
-    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::ifg]);
+    ConfigurationHandler::getInstance().store(ConfigurationHandler::getInstance().data[FrameMachine::fcs]);
+    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::ifg]);
 }
 
-void ifgState::execute(frameMachine *frameMachinePtr){
+void IfgState::execute(FrameMachine *frameMachinePtr){
     // out ifgs till 30 ifgs are sent or till burst period ended
     uint16 i = 0;
     static uint16 numberOfFrames = 1; // max 3 frames -> 1 burst
@@ -55,10 +55,10 @@ void ifgState::execute(frameMachine *frameMachinePtr){
 
         // if period ended -> true
         // if period not ended -> false
-        bool periodEnded = (frameMachinePtr -> burstPeriod/(float)CLOCKS_PER_SEC*MICROSECONDS) > (float)stoi(configurationHandler::getInstance().data[frameMachine::burstTime]);
-        if(i < (uint16)stoi(configurationHandler::getInstance().data[frameMachine::ifg])  && !periodEnded){
-            // frameMachinePtr -> outFile(configurationHandler::getInstance().data[frameMachine::ifg]);
-            configurationHandler::getInstance().store(frameMachinePtr -> frameMachine::ifgs);
+        bool periodEnded = (frameMachinePtr -> burstPeriod/(float)CLOCKS_PER_SEC*MICROSECONDS) > (float)stoi(ConfigurationHandler::getInstance().data[FrameMachine::burstTime]);
+        if(i < (uint16)stoi(ConfigurationHandler::getInstance().data[FrameMachine::ifg])  && !periodEnded){
+            // frameMachinePtr -> outFile(ConfigurationHandler::getInstance().data[frameMachine::ifg]);
+            ConfigurationHandler::getInstance().store(frameMachinePtr -> FrameMachine::ifgs);
             i++;
         }
         else{
@@ -69,13 +69,13 @@ void ifgState::execute(frameMachine *frameMachinePtr){
                 cout << "exit reason -> time ended" << endl;
             }
             else{
-                if(numberOfFrames == (uint16)stoi(configurationHandler::getInstance().data[frameMachine::burstSize])){
+                if(numberOfFrames == (uint16)stoi(ConfigurationHandler::getInstance().data[FrameMachine::burstSize])){
                     frameMachinePtr -> done();
                     numberOfFrames = 1;
                     cout << "exit reason -> max frames per burst" << endl;
                 }
                 else{
-                    frameMachinePtr -> changeState(frameMachinePtr -> states[frameMachine::preamble]);
+                    frameMachinePtr -> changeState(frameMachinePtr -> states[FrameMachine::preamble]);
                     numberOfFrames++;
                 }
             }

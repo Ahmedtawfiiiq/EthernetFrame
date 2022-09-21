@@ -3,18 +3,18 @@
 
 int main()
 {
-    configurationHandler::getInstance().inFile("input.txt");
-    configurationHandler::getInstance().openFile("output.txt");
+    ConfigurationHandler::getInstance().inFile("input.txt");
+    ConfigurationHandler::getInstance().openFile("output.txt");
 
-    for(uint16 i = 0; i < stoi(configurationHandler::getInstance().data[frameMachine::streams]); i++){
+    for(uint16 i = 0; i < stoi(ConfigurationHandler::getInstance().data[FrameMachine::streams]); i++){
         cout << "ethernet frame started" << endl;
-        frameMachine stateMachine;
+        FrameMachine stateMachine;
         while(!stateMachine.isDone()){
             stateMachine.update();
         }
     }
 
-    configurationHandler::getInstance().closeFile();
+    ConfigurationHandler::getInstance().closeFile();
 
     return 0;
 }

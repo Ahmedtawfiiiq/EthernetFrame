@@ -8,14 +8,14 @@ using namespace std;
 typedef unsigned short uint16;
 
 // singleton class
-class configurationHandler
+class ConfigurationHandler
 {
 public:
     vector<string> data;
     fstream file;
     string buffer = "";
 private:
-    configurationHandler() = default;
+    ConfigurationHandler() = default;
 public:
     void inFile(string);
     void store(string);
@@ -23,13 +23,13 @@ public:
     void openFile(string);
     void closeFile();
 
-    static configurationHandler& getInstance(){static configurationHandler instance; return instance;}
+    static ConfigurationHandler& getInstance(){static ConfigurationHandler instance; return instance;}
     // delete copy constructor -> className newInstanceName(oldInstanceName);
-    configurationHandler(const configurationHandler&) = delete;
+    ConfigurationHandler(const ConfigurationHandler&) = delete;
     // delete copy assignment operator -> className newInstanceName = oldInstanceName;
-    configurationHandler& operator=(const configurationHandler&) = delete;
+    ConfigurationHandler& operator=(const ConfigurationHandler&) = delete;
     // delete move constructor
-    configurationHandler(configurationHandler&&) = delete;
+    ConfigurationHandler(ConfigurationHandler&&) = delete;
     // delete move assignment operator
-    configurationHandler& operator=(configurationHandler&&) = delete;
+    ConfigurationHandler& operator=(ConfigurationHandler&&) = delete;
 };

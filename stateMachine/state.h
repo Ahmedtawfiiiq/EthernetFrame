@@ -3,10 +3,10 @@
 #pragma once
 
 // abstract class for states -> used to create our states
-template <class T> class state{
+template <class T> class State{
 public:
     // virtual functions to be overridden in child classes
-    virtual ~state(){}; // destructor
+    virtual ~State(){}; // destructor
     virtual void enter() = 0;   // pure virtual function
     virtual void execute(T*) = 0; // pure virtual function
     virtual void exit() = 0;    // pure virtual function

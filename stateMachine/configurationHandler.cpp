@@ -4,7 +4,7 @@
 #include <chrono>
 #include <random>
 
-void configurationHandler::inFile(string path){
+void ConfigurationHandler::inFile(string path){
 
     fstream file;
     string line;
@@ -19,34 +19,34 @@ void configurationHandler::inFile(string path){
     file.close();
 }
 
-void configurationHandler::store(string data){
+void ConfigurationHandler::store(string data){
     for(uint16 i = 0; i < data.size(); i++){
-        if(configurationHandler::buffer.size() == 110){
-            configurationHandler::outFile(configurationHandler::buffer);
-            configurationHandler::buffer = "";
+        if(ConfigurationHandler::buffer.size() == 110){
+            ConfigurationHandler::outFile(ConfigurationHandler::buffer);
+            ConfigurationHandler::buffer = "";
         }
-        configurationHandler::buffer += data[i];
+        ConfigurationHandler::buffer += data[i];
     }
 }
 
-void configurationHandler::outFile(string vec){
+void ConfigurationHandler::outFile(string vec){
     static uint16 k = 0;
     for(uint16 i = 0; i < vec.size(); i++){
-        configurationHandler::file << vec[i];
+        ConfigurationHandler::file << vec[i];
         k++;
         if(k == 8){
             k = 0;
-            configurationHandler::file << "\n";
+            ConfigurationHandler::file << "\n";
         }
     }
 }
 
-void configurationHandler::openFile(string path){
-    configurationHandler::file.open(path, ios::out);
+void ConfigurationHandler::openFile(string path){
+    ConfigurationHandler::file.open(path, ios::out);
 }
 
-void configurationHandler::closeFile(){
-    configurationHandler::file.close();
+void ConfigurationHandler::closeFile(){
+    ConfigurationHandler::file.close();
 }
 
 
