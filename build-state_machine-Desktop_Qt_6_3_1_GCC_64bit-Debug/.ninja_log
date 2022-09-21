@@ -1,14 +1,9 @@
 # ninja log v5
 2	828	1663698660589040218	CMakeFiles/stateMachine.dir/randomGenerator.cpp.o	30669aaecbbadbde
-2	904	1663742228053422787	CMakeFiles/stateMachine.dir/frameStates.cpp.o	614892d876a27f0e
-1	653	1663741862430734376	CMakeFiles/stateMachine.dir/main.cpp.o	38ebba3c03b09f58
-904	1001	1663742228153424465	stateMachine	133bcc1aec903787
-3	1355	1663684730316670346	CMakeFiles/stateMachine.dir/stateMachine.cpp.o	29cc2fe116706b68
-1	1333	1663741880491034800	CMakeFiles/stateMachine.dir/frameMachine.cpp.o	e627eadec6c45997
-3	1182	1663741780440461943	CMakeFiles/stateMachine.dir/configurationHandler.cpp.o	12cf5ad6cfab37b6
-0	55	1663753784387648486	build.ninja	1c42a00c0a674201
-0	407	1663753784803649621	CMakeFiles/stateMachine.dir/frameMachine.cpp.o	e627eadec6c45997
-1	409	1663753784807649632	CMakeFiles/stateMachine.dir/main.cpp.o	38ebba3c03b09f58
 0	413	1663753784811649643	CMakeFiles/stateMachine.dir/frameStates.cpp.o	614892d876a27f0e
-1	535	1663753784931649970	CMakeFiles/stateMachine.dir/configurationHandler.cpp.o	12cf5ad6cfab37b6
+1	409	1663753784807649632	CMakeFiles/stateMachine.dir/main.cpp.o	38ebba3c03b09f58
 535	608	1663753785003650165	stateMachine	133bcc1aec903787
+0	55	1663754098484169365	build.ninja	1c42a00c0a674201
+3	1355	1663684730316670346	CMakeFiles/stateMachine.dir/stateMachine.cpp.o	29cc2fe116706b68
+0	407	1663753784803649621	CMakeFiles/stateMachine.dir/frameMachine.cpp.o	e627eadec6c45997
+1	535	1663753784931649970	CMakeFiles/stateMachine.dir/configurationHandler.cpp.o	12cf5ad6cfab37b6

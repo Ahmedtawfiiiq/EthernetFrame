@@ -13,7 +13,9 @@ frameMachine.h
 frameStates.cpp
 frameStates.h
 configurationHandler.cpp
-configurationHandler.h)
+configurationHandler.h
+input.txt
+output.txt)
 
 install(TARGETS stateMachine
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
