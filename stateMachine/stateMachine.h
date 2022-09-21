@@ -1,5 +1,11 @@
 #pragma once
+
 #include "state.h"
+#include <iostream>
+
+using namespace std;
+
+typedef unsigned short uint16;
 
 // abstract class for states for FSM (finite state machines)
 // used to create our machines
@@ -19,9 +25,9 @@ public:
 // inline functions are used to access private attributes
 // and due to small size of those functions
 template<class T>
-inline void stateMachine<T>::init(T *frame_machine_ptr, state<T> *initialState){
+inline void stateMachine<T>::init(T *frameMachinePtr, state<T> *initialState){
     currentStatePtr = initialState;
-    framePtr = frame_machine_ptr;
+    framePtr = frameMachinePtr;
     cout << "frame machine inilalized" << endl;
 }
 

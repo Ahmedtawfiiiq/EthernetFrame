@@ -1,9 +1,8 @@
 #include "configurationHandler.h"
 
-#include <chrono>
 #include <iostream>
+#include <chrono>
 #include <random>
-#include <fstream>
 
 void configurationHandler::inFile(string path){
 

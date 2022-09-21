@@ -2,7 +2,6 @@
 #include "stateMachine.h"
 
 #include <vector>
-#include <fstream>
 
 // our frame machine
 class frameMachine:public stateMachine<frameMachine>{

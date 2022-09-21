@@ -2,12 +2,6 @@
 // when compiling a source code file.
 #pragma once
 
-#include <iostream>
-
-using namespace std;
-
-typedef unsigned short uint16;
-
 // abstract class for states -> used to create our states
 template <class T> class state{
 public:

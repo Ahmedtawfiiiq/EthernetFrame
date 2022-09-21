@@ -1,11 +1,6 @@
 #include "frameMachine.h"
 #include "configurationHandler.h"
 
-#include <iostream>
-#include <fstream>
-
-using namespace std;
-
 int main()
 {
     configurationHandler::getInstance().inFile("input.txt");

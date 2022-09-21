@@ -1,6 +1,9 @@
 #pragma once
 
 #include "state.h"
+#include<iostream>
+
+using namespace std;
 
 // preamble state -> start state
 class preambleState:public state<class frameMachine>{
