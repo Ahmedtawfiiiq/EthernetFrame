@@ -1,0 +1,29 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/3.24.2/CompilerIdCXX/a.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/make.exe -f Makefile cmTC_0cc51/fast && C:/MinGW/bin/make.exe  -f CMakeFiles/cmTC_0cc51.dir/build.make CMakeFiles/cmTC_0cc51.dir/build
+make[1]: Entering directory 'C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0cc51.dir/testCXXCompiler.cxx.obj
+C:/MinGW/bin/g++.exe    -o CMakeFiles/cmTC_0cc51.dir/testCXXCompiler.cxx.obj -c C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_0cc51.exe
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/cmTC_0cc51.dir/objects.a
+C:/MinGW/bin/ar.exe qc CMakeFiles/cmTC_0cc51.dir/objects.a @CMakeFiles/cmTC_0cc51.dir/objects1.rsp
+C:/MinGW/bin/g++.exe -Wl,--whole-archive CMakeFiles/cmTC_0cc51.dir/objects.a -Wl,--no-whole-archive -o cmTC_0cc51.exe -Wl,--out-implib,libcmTC_0cc51.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_0cc51.dir/linklibs.rsp
+make[1]: Leaving directory 'C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp'
+
+
+

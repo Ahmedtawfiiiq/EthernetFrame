@@ -1,0 +1,28 @@
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/make.exe -f Makefile cmTC_8c2b4/fast && C:/MinGW/bin/make.exe  -f CMakeFiles/cmTC_8c2b4.dir/build.make CMakeFiles/cmTC_8c2b4.dir/build
+make[1]: Entering directory 'C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8c2b4.dir/CMakeCXXCompilerABI.cpp.obj
+C:/MinGW/bin/g++.exe   -v -o CMakeFiles/cmTC_8c2b4.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp"
+Using built-in specs.
+COLLECT_GCC=C:\MinGW\bin\g++.exe
+Target: x86_64-w64-mingw32
+Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-libstdcxx-verbose --disable-nls --disable-shared --disable-win32-registry --enable-threads=posix --enable-libgomp --with-zstd=/c/mingw --disable-bootstrap
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c2b4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c2b4.dir/CMakeCXXCompilerABI.cpp.'
+g++.exe: warning: C:/Program: linker input file unused because linking not done
+g++.exe: error: C:/Program: linker input file not found: No such file or directory
+g++.exe: warning: Files/CMake/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp\: linker input file unused because linking not done
+g++.exe: error: Files/CMake/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp\: linker input file not found: No such file or directory
+make[1]: *** [CMakeFiles/cmTC_8c2b4.dir/build.make:78: CMakeFiles/cmTC_8c2b4.dir/CMakeCXXCompilerABI.cpp.obj] Error 1
+make[1]: Leaving directory 'C:/Users/Ahmad/OneDrive/Desktop/trial6/Ethernet_Frame/stateMachine/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_8c2b4/fast] Error 2
+
+
+
+
