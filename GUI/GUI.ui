@@ -58,10 +58,20 @@
            <x>0</x>
            <y>0</y>
            <width>466</width>
-           <height>804</height>
+           <height>858</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Enter executable file path (Not relative path)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
           <item>
            <widget class="QLabel" name="l3">
             <property name="minimumSize">

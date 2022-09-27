@@ -36,10 +36,16 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 466, 804))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 466, 858))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.label = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label.setObjectName("label")
+        self.verticalLayout_3.addWidget(self.label)
+        self.lineEdit = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.lineEdit.setObjectName("lineEdit")
+        self.verticalLayout_3.addWidget(self.lineEdit)
         self.l3 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         self.l3.setMinimumSize(QtCore.QSize(0, 30))
         self.l3.setObjectName("l3")
@@ -170,6 +176,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton1.setText(_translate("MainWindow", "Run"))
         self.pushButton2.setText(_translate("MainWindow", "Start"))
+        self.label.setText(_translate("MainWindow", "Enter executable file path (Not relative path)"))
         self.l3.setText(_translate("MainWindow", "preamble"))
         self.l4.setText(_translate("MainWindow", "start of packet"))
         self.l5.setText(_translate("MainWindow", "destination address"))
@@ -201,7 +208,7 @@ class Ui_MainWindow(object):
         file.write(self.line11.text())
         file.close()
         import subprocess
-        subprocess.run("/home/ahmed/guiTest/stateMachine")
+        subprocess.run(self.lineEdit.text())
 
     def parseOutFile(self):
         with open("output.txt", 'r', encoding='utf-8') as f:
